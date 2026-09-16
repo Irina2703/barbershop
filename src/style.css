@@ -22,6 +22,7 @@ body {
   font-family: var(--font-family);
   background: var(--white);
   color: var(--black);
+
 }
 
 
@@ -65,16 +66,13 @@ body {
 }
 
 
-/* =========================
-   HERO
-========================= */
+
 
 .hero {
   max-width: 1300px;
   min-height: 570px;
   margin: 0 auto;
   padding: 50px 7% 70px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
@@ -137,7 +135,7 @@ body {
 }
 
 
-/* HERO IMAGE */
+
 
 .hero-image {
   width: 100%;
@@ -146,7 +144,7 @@ body {
   border-radius: 4px;
 }
 
-.hero-image img {
+.hero-image-img {
   width: 100%;
   height: 100%;
   display: block;
@@ -154,19 +152,14 @@ body {
 }
 
 
-/* =========================
-   SERVICES
-========================= */
 
 .services {
   max-width: 1100px;
   margin: 0 auto;
   padding: 70px 7%;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-
   text-align: center;
 }
 
@@ -177,16 +170,13 @@ body {
 .service-icon {
   width: 55px;
   height: 55px;
-
   margin: 0 auto 18px;
-
   border: 2px solid var(--gold);
   border-radius: 50%;
 }
 
-.service h2 {
+.service-regular {
   margin-bottom: 18px;
-
   font-size: 16px;
   font-weight: 600;
 }
@@ -195,13 +185,10 @@ body {
   border: none;
   background: #000;
   color: #fff;
-
   padding: 10px 22px;
-
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1px;
-
   transition: background 0.3s ease;
 }
 
@@ -210,9 +197,7 @@ body {
 }
 
 
-/* =========================
-   WHY CHOOSE US
-========================= */
+
 
 .why {
   position: relative;
@@ -225,7 +210,7 @@ body {
   inset: 0;
 }
 
-.why-image img {
+.why-image-img {
   width: 100%;
   height: 100%;
   display: block;
@@ -238,18 +223,18 @@ body {
 .why-content {
   position: relative;
   z-index: 2;
-
-  max-width: 1200px;
-  min-height: 500px;
-
   margin: 0 auto;
   padding: 60px 7%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   gap: 80px;
+
+
+  width: 1440px;
+height: 988px;
+
 }
 
 .why-text {
@@ -257,25 +242,25 @@ body {
   color: #fff;
 }
 
-.why-text h2 {
+.why-text-h2 {
   margin-bottom: 20px;
 
   font-size: 34px;
   font-weight: 600;
 }
 
-.why-text p {
+.why-text-p {
   margin-bottom: 20px;
 
   font-size: 14px;
   line-height: 1.7;
 }
 
-.why-text ul {
+.why-text-ul {
   padding-left: 20px;
 }
 
-.why-text li {
+.why-text-li {
   margin-bottom: 10px;
 
   font-size: 13px;
@@ -283,34 +268,25 @@ body {
 }
 
 
-/* =========================
-   WORKING HOURS
-========================= */
 
 .hours {
   width: 310px;
-
   padding: 35px;
-
   background: #fff;
   border-radius: 5px;
-
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.hours h2 {
+.hours-h2 {
   margin-bottom: 20px;
-
   color: var(--gold);
-
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.hours p {
+.hours-p {
   margin-bottom: 9px;
-
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -318,16 +294,11 @@ body {
 
 .hours .btn {
   display: block;
-
   margin: 22px auto 0;
-
   padding: 12px 24px;
-
   border: none;
-
   background: #000;
   color: #fff;
-
   font-family: var(--font-family);
   font-size: 11px;
   font-weight: 600;
@@ -338,45 +309,34 @@ body {
 }
 
 
-/* =========================
-   PRICING
-========================= */
+
 
 .pricing {
   max-width: 1000px;
-
-  margin: 0 auto;
-
+  
   padding: 80px 7%;
 }
 
-.pricing > h2 {
+.pricing-h2 {
   margin-bottom: 40px;
-
   text-align: center;
-
   font-size: 34px;
   font-weight: 600;
 }
 
 .price-grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   column-gap: 70px;
   row-gap: 0;
 }
 
 .price-item {
   min-height: 55px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   border-bottom: 1px solid #ddd;
-
   font-size: 13px;
   color: var(--gray);
 }
@@ -388,41 +348,30 @@ body {
 }
 
 
-/* =========================
-   CTA
-========================= */
+
 
 .cta {
   position: relative;
-
-  min-height: 450px;
-
+height: 963px;
   background: var(--dark);
-
   overflow: hidden;
-
   display: flex;
   align-items: center;
-
   padding: 70px 10%;
 }
 
 .cta-image {
   width: 390px;
   height: 390px;
-
   overflow: hidden;
-
   border: 18px solid var(--gold);
   border-radius: 50%;
 }
 
-.cta-image img {
+.cta-image-img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
 }
 
@@ -440,7 +389,7 @@ body {
   border-radius: 5px;
 }
 
-.cta-card h2 {
+.cta-card-h2 {
   margin-bottom: 20px;
 
   font-size: 30px;
@@ -448,7 +397,7 @@ body {
   font-weight: 600;
 }
 
-.cta-card p {
+.cta-card-p {
   margin-bottom: 25px;
 
   color: #444;
@@ -458,9 +407,6 @@ body {
 }
 
 
-/* =========================
-   RESPONSIVE TABLET
-========================= */
 
 @media (max-width: 900px) {
 
@@ -488,11 +434,542 @@ body {
 }
 
 
-/* =========================
-   RESPONSIVE MOBILE
-========================= */
 
-@media (max-width: 700px) {
+
+
+.contact-section {
+   display: grid;
+    grid-template-columns: 1fr 1fr;    
+    align-items: start;
+    gap: 40px;
+    padding: 0 24px;
+  display: flex;
+  background-color: #292c32;
+}
+
+
+
+.contact-photo {
+  width: 51%;
+ 
+  overflow: hidden;
+}
+
+.contact-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.contact-content {
+  width: 49%;
+
+  padding: 30px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content-h2 {
+  width: 100%;
+  margin: 0 0 55px 0;
+
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+
+
+
+.contactform {
+  width: 100%;
+  max-width: 620px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.contactform-input,
+.contactform-textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  background-color: #ffffff;
+  color: #333333;
+
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+
+  padding: 16px;
+}
+
+.contactform-input {
+  height: 66px;
+}
+
+.contactform-textarea {
+  height: 215px;
+  resize: none;
+}
+
+
+
+.contactform-input::placeholder,
+.contactform-textarea::placeholder {
+  color: #a99d9d;
+  opacity: 1;
+}
+
+
+.contactForm-button {
+  width: 100%;
+  height: 66px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: #aaa174;
+  color: white;
+
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.contactForm-button:hover {
+  background-color: #b9af82;
+  transform: translateY(-2px);
+}
+.consultation{
+   padding: 112px 64px;
+} 
+.consultation-photo{
+   width: 1442px;
+height: 321px;
+} 
+.consultation-content {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin-top: -150px;
+  margin-left: 20px;
+  z-index: 5;
+
+  background: #ffffff;
+  border-radius: 0 20px 0 0;
+  padding: 18px 20px;
+  box-sizing: border-box;
+}
+
+.consultation-content p {
+  margin: 0;
+
+  color: #9d956d;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.consultation-content strong {
+  font-weight: 900;
+}
+
+.consultation-button {
+  display: block;
+  margin: 14px auto 0;
+
+  padding: 5px 10px;
+
+  background: #ffffff;
+  color: #22262c;
+
+  border: 1px solid #999999;
+  border-radius: 5px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.consultation-button:hover {
+  background: #9d956d;
+  color: #ffffff;
+}
+
+
+
+
+.barber-services {
+  background: #292c32;
+  padding: 22px 18px 50px;
+  color: #ffffff;
+  
+height: 1626px;
+}
+
+.barber-services-h2 {
+  margin: 0 0 18px;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+
+
+
+.barber-services-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 78px 78px;
+
+  gap: 10px;
+}
+
+
+
+.barber-services-main {
+  grid-column: 1;
+  grid-row: 1 / 3;
+
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.barber-services-main-img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+
+
+.barber-service-item {
+  background: #d9d9db;
+
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  color: #111111;
+
+  text-align: center;
+}
+
+.barber-service-item span {
+  display: block;
+
+  font-size: 29px;
+  line-height: 1;
+
+  margin-bottom: 5px;
+
+  filter: grayscale(100%);
+}
+
+.barber-service-item p {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+
+.photo-gallery {
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px 10px 50px;
+  box-sizing: border-box;
+
+
+}
+
+
+
+
+.photo-gallery-h2 {
+  margin: 0 auto 47px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 800;
+  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
+font-size: 64px;
+}
+
+
+
+
+.photo-gallery-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 13px;
+}
+
+
+
+
+.photo-gallery-grid-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  display: block;
+
+  border-radius: 15px;
+  vertical-align: middle;
+}
+
+
+
+
+
+.customer-reviews {
+  background: #9d9570;
+  padding: 25px 33px 25px;
+  position: relative;
+  margin-top: -400px;
+  z-index: 2;
+ 
+}
+
+.customer-reviews-h2 {
+  margin: 0 0 18px;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+
+
+
+.customer-reviews-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 37px;
+  color: #000;
+}
+
+
+
+
+.customer-review {
+  position: relative;
+  min-height: 125px;
+  background: #ffffff;
+  color: #333333;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 30px;
+width: 580px;
+height: 504px;
+}
+
+
+
+
+.customer-review-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.customer-review-header-strong {
+  font-size: 11px;
+  color: #222222;
+  font-family: var(--font-family);
+font-weight: 800;
+font-size: 37px;
+color: #000;
+}
+
+.customer-review-header-span {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #8bc9bb;
+
+  font-size: 15px;
+}
+
+
+
+
+.customer-review-p {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 9px;
+  line-height: 1.4;
+
+  color: #444444;
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 33px;
+color: #000;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .consultation-content {
+    width: calc(100% - 40px);
+
+    margin-top: -150px;
+    margin-left: 20px;
+
+    padding: 16px 18px;
+  }
+
+  .consultation-content p {
+    font-size: 15px;
+  }
+
+
+  .barber-services {
+    padding: 22px 18px 45px;
+  }
+
+  .barber-services h2 {
+    font-size: 19px;
+  }
+
+
+  .barber-services-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: 78px 78px;
+
+    gap: 8px;
+  }
+
+
+  .barber-service-item {
+    border-radius: 13px;
+  }
+
+  .barber-service-item span {
+    font-size: 25px;
+  }
+
+  .barber-service-item p {
+    font-size: 12px;
+  }
+
+
+  .photo-gallery {
+    padding: 5px 33px 40px;
+  }
+
+  .photo-gallery h2 {
+    font-size: 17px;
+  }
+
+  .photo-gallery-grid {
+    gap: 5px;
+  }
+
+  .photo-gallery-grid-img {
+    height: 102px;
+  }
+
+
+  .customer-reviews {
+    padding: 25px 33px;
+  }
+
+  .customer-reviews-h2 {
+    font-size: 18px;
+  }
+
+  .customer-reviews-list {
+    gap: 5px;
+  }
+
+  .customer-review {
+    padding: 9px;
+    min-height: 125px;
+  }
+
+
+ 
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+
+  
+  .contact-content {
+    min-height: auto;
+    padding: 40px 25px;
+  }
+
+  .contact-content-h2 {
+    font-size: 42px;
+  }
+
 
   .header {
     min-height: 70px;
@@ -516,7 +993,7 @@ body {
   }
 
 
-  /* HERO */
+
 
   .hero {
     grid-template-columns: 1fr;
@@ -551,7 +1028,7 @@ body {
   }
 
 
-  /* SERVICES */
+ 
 
   .services {
     grid-template-columns: 1fr 1fr;
@@ -566,7 +1043,7 @@ body {
   }
 
 
-  /* WHY */
+
 
   .why {
     min-height: auto;
@@ -588,7 +1065,7 @@ body {
     gap: 40px;
   }
 
-  .why-text h2 {
+  .why-text-h2 {
     font-size: 28px;
   }
 
@@ -597,13 +1074,13 @@ body {
   }
 
 
-  /* PRICING */
+ 
 
   .pricing {
     padding: 60px 6%;
   }
 
-  .pricing > h2 {
+  .pricing-h2 {
     font-size: 28px;
   }
 
@@ -612,7 +1089,7 @@ body {
   }
 
 
-  /* CTA */
+  
 
   .cta {
     min-height: 650px;
@@ -646,18 +1123,10 @@ body {
     padding: 30px;
   }
 
-  .cta-card h2 {
+  .cta-card-h2 {
     font-size: 24px;
   }
 
-}
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 400px) {
 
   .header-nav {
     gap: 12px;
@@ -683,4 +1152,73 @@ body {
     height: 280px;
   }
 
+
+ .contact-photo-img {
+  overflow: hidden;
 }
+
+  .photo-gallery {
+    padding: 15px 10px 40px;
+
+ 
+  }
+
+  .photo-gallery-h2 {
+    font-size: 27px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+  }
+
+  .photo-gallery-grid {
+    gap: 10px;
+  }
+
+  .photo-gallery-grid-img  {
+    border-radius: 13px;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+
+  .photo-gallery {
+    padding: 15px 8px 30px;
+
+   
+  }
+
+  .photo-gallery-h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .photo-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .photo-gallery-grid-img  {
+    border-radius: 12px;
+  }
+}
+
+
+
+@media (max-width: 350px) {
+
+  .photo-gallery-h2 {
+    font-size: 19px;
+  }
+
+  .photo-gallery-grid {
+    gap: 6px;
+  }
+
+  .photo-gallery-grid-img  {
+    border-radius: 10px;
+  }
+}
+
+
