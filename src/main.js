@@ -1,9 +1,15 @@
 import './style.css';
 
 
-// ========================================
-// HEADER UND FOOTER LADEN
-// ========================================
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
+
 
 async function ladeTemplate(id, datei) {
 
@@ -38,9 +44,6 @@ async function ladeTemplate(id, datei) {
 }
 
 
-// ========================================
-// SEITE WIRD GELADEN
-// ========================================
 
 document.addEventListener('DOMContentLoaded', async () => {
 
@@ -58,11 +61,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   );
 
 
-  // ========================================
-  // NAVIGATION
-  // ========================================
-
-  document
+ 
+ /*ocument
     .querySelectorAll('.header-nav a')
     .forEach((link) => {
 
@@ -96,11 +96,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
 
     });
+*/
 
 
-  // ========================================
-  // BOOKING BUTTONS
-  // ========================================
 
   document
     .querySelectorAll(
@@ -119,9 +117,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
 
-  // ========================================
-  // CONTACT FORM
-  // ========================================
+ 
 
   const contactForm =
     document.getElementById('contactForm');
@@ -146,4 +142,50 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   }
 
+
+
+ const reviewsSwiper =
+    document.querySelector('.customer-reviews-swiper');
+
+  if (reviewsSwiper) {
+
+    new Swiper(reviewsSwiper, {
+
+      modules: [
+        Navigation,
+        Pagination
+      ],
+
+      loop: true,
+
+      slidesPerView: 1,
+
+      spaceBetween: 20,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+
+      breakpoints: {
+
+        768: {
+          slidesPerView: 2
+        },
+
+        1024: {
+          slidesPerView: 3
+        }
+
+      }
+
+    });
+
+  }
 });
+
